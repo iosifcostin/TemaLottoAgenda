@@ -50,6 +50,10 @@ public class Lotto {
 
     }
 
+
+                    // SAU ASA : ......
+
+
 //    static int[] genereazaNumere
 //    {
 //
