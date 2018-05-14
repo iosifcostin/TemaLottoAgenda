@@ -65,11 +65,11 @@ public class Agenda { // begin class
 
         if (gasit)
         {
-            System.out.println("L-am gasit");
+            System.out.println("L-am gasit" );
         }
         else
         {
-            System.out.println("Nu l-am gasit");
+            System.out.println(cautaNume + " Nu exista");
         }
 
     } // end metoda
@@ -99,33 +99,40 @@ public class Agenda { // begin class
     static void modificare ()
     {
         String identifica = SkeletonJava.readStringConsole("Ce doriti sa modificati ? : ");
-        String modifica = SkeletonJava.readStringConsole("Modificati contactul : ");
+        String modifica = SkeletonJava.readStringConsole("Modificati ... : ");
 
+        boolean ysf = false;
 
         for (int i = 0; i < agenda.length; i++) {
 
             if (identifica.equals(agenda[i]))
             {
-
                 agenda[i] = agenda[i].replaceAll(agenda[i], modifica);
-
+                ysf = true;
             }
+        }
+        if (!ysf)
+            System.out.println("Mai incearcati odata");
 
-        }  // end for loop
     }  // end metoda
 
     static void stergere () {
 
         String stergere = SkeletonJava.readStringConsole("Ce doriti sa stergeti ? : ");
 
+        boolean ysf = false;
+
         for (int i = 0; i<agenda.length; i++) {
 
             if (stergere.equals(agenda[i]))
             {
                 agenda[i] = null;
+                ysf = true;
             }
 
-        } //end for loop
+        }
+        if (!ysf)
+            System.out.println("Mai incearcati odata");
     } // end metoda
 
 
