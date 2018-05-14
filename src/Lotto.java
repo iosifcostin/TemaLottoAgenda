@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.Random;
 
 public class Lotto {
 
@@ -47,6 +49,33 @@ public class Lotto {
 
 
     }
+
+//    static int[] genereazaNumere
+//    {
+//
+//        int numereGenerate [] = new int[6];
+//
+//        for (int i = 0; i<numereGenerate.length; i++)
+//        {
+//            numereGenerate[i] = new Random().nextInt(49)+1;
+//        }
+//
+//        Arrays.sort(numereGenerate);
+//
+//        for (int i = 1; i<numereGenerate.length; i++){
+//
+//            while (numereGenerate[i] == numereGenerate [i-1]){
+//
+//                numereGenerate [i] = new Random().nextInt(49)+1;
+//
+//                Arrays.sort(numereGenerate);
+//            }
+//        }
+//
+//        return numereGenerate;
+//    }
+
+
     static int comparaNumere (int [] nums1 , int [] nums2)      // metoda pentru comparatie
     {
         int gasite = 0;
