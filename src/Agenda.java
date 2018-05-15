@@ -124,7 +124,7 @@ public class Agenda { // begin class
 
         for (int i = 0; i<agenda.length; i++) {
 
-            if (stergere.equals(agenda[i]))
+            if (agenda[i] != null && agenda[i].startsWith(stergere))
             {
                 agenda[i] = null;
                 ysf = true;
