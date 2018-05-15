@@ -84,7 +84,6 @@ public class LottoBubbleSort{
 
     static void sortare(int [] sir )
     {
-        sir = new int[6];
 
         for (int i = 0; i < sir.length; i++)
         {
