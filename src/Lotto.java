@@ -38,7 +38,7 @@ public class Lotto {
     static int[] genereazaNumere() {                            // metoda pentru a genera 6
         int numereGenerate[] = new int[6];                      // numere diferite unul de altul
         ArrayList<Integer> numbers = new ArrayList();           // si a le pune intr-un sir
-        for (int i = 0; i < 49; i++) {
+        for (int i = 0; i < 49; i++) {                          //
             numbers.add(i + 1);
         }
         Collections.shuffle(numbers);
@@ -78,6 +78,54 @@ public class Lotto {
 //
 //        return numereGenerate;
 //    }
+
+
+                // SAU ASA : .......
+
+
+//    static int[] genereazaNumere()
+//    {
+//
+//        int numereGenerate [] = new int[6];
+//
+//        for (int i = 0; i<numereGenerate.length; i++)
+//        {
+//            numereGenerate[i] = new Random().nextInt(49)+1;
+//        }
+//
+//        sortare(numereGenerate);
+//
+//        for (int i = 1; i<numereGenerate.length; i++){
+//
+//            while (numereGenerate[i] == numereGenerate [i-1]){
+//
+//                numereGenerate [i] = new Random().nextInt(49)+1;
+//
+//                sortare(numereGenerate);
+//            }
+//        }
+//
+//        return numereGenerate;
+//    }
+
+    static void sortare(int [] sir )
+    {
+        sir = new int[6];
+
+        int maiMare = 0;
+
+        for (int i = 0; i < sir.length; i++)
+        {
+            for (int j = 1; j < sir.length; j++)
+            {
+                if (sir[j-1] > sir [j] )
+
+                    maiMare = sir[j-1];
+                sir[j-1] = sir[j];
+                sir[j] = maiMare;
+            }
+        }
+    }
 
 
     static int comparaNumere (int [] nums1 , int [] nums2)      // metoda pentru comparatie
