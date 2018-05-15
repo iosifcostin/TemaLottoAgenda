@@ -51,7 +51,7 @@ public class Lotto {
     }
 
 
-                    // SAU ASA : ......
+    // SAU ASA : ......
 
 
 //    static int[] genereazaNumere
@@ -80,7 +80,7 @@ public class Lotto {
 //    }
 
 
-                // SAU ASA : .......
+    // SAU ASA : .......
 
 
 //    static int[] genereazaNumere()
@@ -126,7 +126,6 @@ public class Lotto {
             }
         }
     }
-
 
     static int comparaNumere (int [] nums1 , int [] nums2)      // metoda pentru comparatie
     {
